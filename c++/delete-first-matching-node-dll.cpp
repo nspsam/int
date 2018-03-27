@@ -9,7 +9,7 @@ Implement: Remove first element matching a specified key.
 **/
 
 class Solution {
-  boolean deleteFirstMatchingNodeofdll(ListNode **node, int key) {
+  bool deleteFirstMatchingNodeofdll(ListNode **node, int key) {
     
     ListNode **head = node;
     

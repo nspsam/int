@@ -23,9 +23,8 @@ Examples:
 
 class Solution {
   Node* getNextNode(Node* node) {
-	  
-	  if(nullptr == node)
-		  return nullptr;
+    if(nullptr == node)
+      return nullptr;
 	  
 	  if(node->getFirstChild())
 		  return node->getFirstChild();

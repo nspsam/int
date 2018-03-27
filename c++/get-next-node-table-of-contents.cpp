@@ -39,6 +39,6 @@ class Solution {
     while(nullptr == node->getNextSibling() && node->getParent())
       node = node->getParent();
 	  
-    return  node->getNextSibling();
+    return node->getNextSibling();
   }
 };

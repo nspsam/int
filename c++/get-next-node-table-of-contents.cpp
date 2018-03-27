@@ -25,13 +25,13 @@ class Solution {
   Node* getNextNode(Node* node) {
     if(nullptr == node)
       return nullptr;
+    
+    if(node->getFirstChild())
+      return node->getFirstChild();
 	  
-	  if(node->getFirstChild())
-		  return node->getFirstChild();
+    while(!node->getNextSibling() && node->getParent())
+      node = node->getParent();
 	  
-	  while(!node->getNextSibling() && node->getParent())
-		  node = node->getParent();
-	  
-	  return  node->getNextSibling();
+    return  node->getNextSibling();
   }
 };

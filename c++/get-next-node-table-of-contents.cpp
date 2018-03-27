@@ -12,8 +12,6 @@ Table of Contents
 3
 
 Given: node.getParent(), node.getNextSibling(), node.getFirstChild()
-
-
 Implement: getNextNode(node) - Print next bullet in printed order
 
 Examples:
